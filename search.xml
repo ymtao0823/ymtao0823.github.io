@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[在Hexo中使用MathJax插入数学公式]]></title>
+      <url>%2F2017%2F02%2F17%2F%E5%9C%A8Hexo%E4%B8%AD%E4%BD%BF%E7%94%A8mathjax%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%2F</url>
+      <content type="text"><![CDATA[这篇post是用来测试网站对数学公式的渲染情况。 Augmented matrix$$ \left[\begin{array}{cc|c} 1&amp;2&amp;3\\ 4&amp;5&amp;6\end{array} \right]$$ Sum of squares$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$ Maxwell’s equations$$\begin{align} \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \\ \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \\ \nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp; = \vec{\mathbf{0}} \\ \nabla \cdot \vec{\mathbf{B}} &amp; = 0\end{align}$$ Tables$$\begin{array}{c|lcr}n &amp; \text{Left} &amp; \text{Center} &amp; \text{Right} \\\hline1 &amp; 0.24 &amp; 1 &amp; 125 \\2 &amp; -1 &amp; 189 &amp; -8 \\3 &amp; -20 &amp; 2000 &amp; 1+10i\end{array}$$ Highlight an equation$$ \bbox[yellow,5px,border:2px solid red]{e^x=\lim_{n\to\infty} \left( 1+\frac{x}{n} \right)^n\qquad (1)}$$ In-line mathematicsFinally, while display equations look good for a page of samples, the ability to mix math and text in a paragraph is also important. This expression $\sqrt{3x-1}+(1+x)^2$ is an example of an inline equation. As you see, MathJax equations can be used this way as well, without unduly disturbing the spacing between lines. Note需要注意的是：由于Markdown和$\LaTeX{}$的语法不一致问题，在Markdown中需要使用反斜杠的时候，注意转义问题。如，在表示换行时需要四个反斜杠“\“。 Reference MathJax basic tutorial and quick reference 解决 MathJax 与 Markdown 的冲突 Mathjax与LaTex公式简介]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Hello World]]></title>
       <url>%2F2017%2F02%2F09%2Fhello-world%2F</url>
       <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
