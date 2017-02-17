@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-17T12:28:38.000Z</updated>
+  <updated>2017-02-17T15:13:04.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/02/17/%E5%9C%A8Hexo%E4%B8%AD%E4%BD%BF%E7%94%A8mathjax%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
     <id>http://yoursite.com/2017/02/17/在Hexo中使用mathjax插入数学公式/</id>
     <published>2017-02-17T05:36:30.000Z</published>
-    <updated>2017-02-17T12:28:38.000Z</updated>
+    <updated>2017-02-17T15:13:04.000Z</updated>
     
     <content type="html"><![CDATA[<p>这篇post是用来测试网站对数学公式和代码的渲染情况。</p>
 <h2 id="数学公式渲染"><a href="#数学公式渲染" class="headerlink" title="数学公式渲染"></a>数学公式渲染</h2><h3 id="augmented-matrix"><a href="#Augmented-matrix" class="headerlink" title="Augmented matrix"></a>Augmented matrix</h3><p>$$     \left[<br>\begin{array}{cc|c}<br>   1&amp;2&amp;3\\<br>   4&amp;5&amp;6<br>\end{array}<br>        \right]<br>$$</p>
