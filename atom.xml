@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-17T10:21:06.000Z</updated>
+  <updated>2017-02-17T11:11:42.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/02/17/%E5%9C%A8Hexo%E4%B8%AD%E4%BD%BF%E7%94%A8mathjax%E6%8F%92%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
     <id>http://yoursite.com/2017/02/17/在Hexo中使用mathjax插入数学公式/</id>
     <published>2017-02-17T05:36:30.000Z</published>
-    <updated>2017-02-17T10:21:06.000Z</updated>
+    <updated>2017-02-17T11:11:42.000Z</updated>
     
     <content type="html"><![CDATA[<p>这篇post是用来测试网站对数学公式和代码的渲染情况。</p>
 <h2 id="数学公式渲染"><a href="#数学公式渲染" class="headerlink" title="数学公式渲染"></a>数学公式渲染</h2><h3 id="augmented-matrix"><a href="#Augmented-matrix" class="headerlink" title="Augmented matrix"></a>Augmented matrix</h3><p>$$     \left[<br>\begin{array}{cc|c}<br>   1&amp;2&amp;3\\<br>   4&amp;5&amp;6<br>\end{array}<br>        \right]<br>$$</p>
@@ -30,22 +30,16 @@
 <h3 id="highlight-an-equation"><a href="#Highlight-an-equation" class="headerlink" title="Highlight an equation"></a>Highlight an equation</h3><p>$$ \bbox[yellow,5px,border:2px solid red]<br>{<br>e^x=\lim_{n\to\infty} \left( 1+\frac{x}{n} \right)^n<br>\qquad (1)<br>}<br>$$</p>
 <h3 id="in-line-mathematics"><a href="#In-line-mathematics" class="headerlink" title="In-line mathematics"></a>In-line mathematics</h3><p>Finally, while display equations look good for a page of samples, the ability to mix math and text in a paragraph is also important. This expression $\sqrt{3x-1}+(1+x)^2$ is an example of an inline equation. As you see, MathJax equations can be used this way as well, without unduly disturbing the spacing between lines.</p>
 <h2 id="代码测试"><a href="#代码测试" class="headerlink" title="代码测试"></a>代码测试</h2><p>常用的编程语言有Matlab、R、Stata、Java、Python、Bash和SQL。下面分别对这几种语言进行测试。</p>
-<h3 id="matlab"><a href="#Matlab" class="headerlink" title="Matlab"></a>Matlab</h3><pre><code class="Matlab">t = 0:.02:3.14;
-y = zeros(10,length(t));
-x = zeros(size(t));
-for k = 1:2:19
-   x = x + sin(k*t)/k;
-   y((k+1)/2,:) = x;
-end
-plot(y(1:2:9,:)&#39;)
-title(&#39;The building of a square wave: Gibbs&#39;&#39; effect&#39;)
-
-### R
-
-```R
+<h3 id="matlab"><a href="#Matlab" class="headerlink" title="Matlab"></a>Matlab</h3><figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">t = <span class="number">0</span>:<span class="number">.02</span>:<span class="number">3.14</span>;</div><div class="line">y = <span class="built_in">zeros</span>(<span class="number">10</span>,<span class="built_in">length</span>(t));</div><div class="line">x = <span class="built_in">zeros</span>(<span class="built_in">size</span>(t));</div><div class="line"><span class="keyword">for</span> k = <span class="number">1</span>:<span class="number">2</span>:<span class="number">19</span></div><div class="line">   x = x + <span class="built_in">sin</span>(k*t)/k;</div><div class="line">   y((k+<span class="number">1</span>)/<span class="number">2</span>,:) = x;</div><div class="line"><span class="keyword">end</span></div><div class="line">plot(y(<span class="number">1</span>:<span class="number">2</span>:<span class="number">9</span>,:)')</div><div class="line">title(<span class="string">'The building of a square wave: Gibbs'' effect'</span>)</div></pre></td></tr></table></figure>
+<h3 id="java"><a href="#Java" class="headerlink" title="Java"></a>Java</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FullStackException</span> <span class="keyword">extends</span> <span class="title">RuntimeException</span> </span>&#123;  </div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="title">FullStackException</span><span class="params">(String err)</span> </span>&#123;</div><div class="line">    <span class="keyword">super</span>(err);</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">10</span>):</div><div class="line">  print(i)</div></pre></td></tr></table></figure>
+<h3 id="bash"><a href="#Bash" class="headerlink" title="Bash"></a>Bash</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> Desktop/</div><div class="line">mkdir hexo</div></pre></td></tr></table></figure>
+<h3 id="sql"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">SELECT</span> studentID, <span class="keyword">name</span> </div><div class="line"><span class="keyword">FROM</span> uniDatabase</div></pre></td></tr></table></figure>
+<h3 id="r"><a href="#R" class="headerlink" title="R"></a>R</h3><pre><code class="R">install.packages(<span class="string">"caTools"</span>)  <span class="comment"># install external package</span>
+<span class="keyword">library</span>(caTools)           <span class="comment"># external package providing write.gif function</span>
 </code></pre>
-<h3 id="stata"><a href="#Stata" class="headerlink" title="Stata"></a>Stata</h3><h3 id="java"><a href="#Java" class="headerlink" title="Java"></a>Java</h3><h3 id="python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3><h3 id="bash"><a href="#Bash" class="headerlink" title="Bash"></a>Bash</h3><p>###SQL</p>
-<h2 id="note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><p>需要注意的是：由于Markdown和$\LaTeX{}$的语法不一致问题，在Markdown中需要使用反斜杠的时候，注意转义问题。如，在表示换行时需要四个反斜杠<em>“\“</em>。</p>
+<h2 id="note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><p>需要注意的是：由于Markdown和$\LaTeX{}$的语法不一致问题，在Markdown中需要使用反斜杠和星字符的时候，注意转义问题。如，在表示换行时需要四个反斜杠<em>“\“</em>。</p>
+<p>以上对代码渲染只做了一些简单测试，现在Markdown对Stata这种轻量级的编程语言还没有提供支持，因此在上面没有给出Stata代码，希望以后能找到解决方案。还有就是目前还没有找到如何能够一键复制代码的办法，在以后po文中会给出这个方便的功能。</p>
 <h2 id="reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol>
 <li><a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference/5044" target="_blank" rel="external">MathJax basic tutorial and quick reference</a></li>
 <li><a href="http://liam0205.me/2015/09/09/fix-conflict-between-mathjax-and-markdown/" target="_blank" rel="external">解决 MathJax 与 Markdown 的冲突</a></li>
