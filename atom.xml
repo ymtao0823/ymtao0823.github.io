@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-18T17:17:41.000Z</updated>
+  <updated>2017-02-18T17:28:49.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,13 +20,13 @@
     <link href="http://yoursite.com/2017/02/19/Plotly/"/>
     <id>http://yoursite.com/2017/02/19/Plotly/</id>
     <published>2017-02-18T15:21:53.000Z</published>
-    <updated>2017-02-18T17:17:41.000Z</updated>
+    <updated>2017-02-18T17:28:49.000Z</updated>
     
     <content type="html"><![CDATA[<p><head><script src="https://cdn.plot.ly/plotly-latest.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script></head><br>This is a test of using <a href="https://plot.ly/" target="_blank" rel="external">Plotly</a> in my blog.  </p>
 <p><font color="red"><strong>Please visit this post on your Mac or PC to get a better view. 
 </strong></font></p>
 <h2 id="interactive-plots-in-plotlyjs"><a href="#Interactive-plots-in-plotly-js" class="headerlink" title="Interactive plots in plotly.js"></a>Interactive plots in plotly.js</h2><p>Two graphs are depicted as follows:<br><a id="more"></a></p>
-<h3 id="a-simple-line-graph"><a href="#A-simple-line-graph" class="headerlink" title="A simple line graph"></a>A simple line graph</h3><div id="tester" style="width:75vh;height:auto;margin: 0px auto;resize: both;"></div>
+<h3 id="a-simple-line-graph"><a href="#A-simple-line-graph" class="headerlink" title="A simple line graph"></a>A simple line graph</h3><div id="tester" style="width:75vh;height:auto;margin: 0px auto;resize:both;overflow: auto;"></div>
 
 <script>
     TESTER = document.getElementById('tester');
