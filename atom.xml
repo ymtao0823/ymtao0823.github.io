@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-18T05:21:54.000Z</updated>
+  <updated>2017-02-18T16:15:19.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,75 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Data Visualization Using Plotly in Hexo</title>
+    <link href="http://yoursite.com/2017/02/19/Plotly/"/>
+    <id>http://yoursite.com/2017/02/19/Plotly/</id>
+    <published>2017-02-18T15:21:53.000Z</published>
+    <updated>2017-02-18T16:15:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><head><script src="https://cdn.plot.ly/plotly-latest.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script></head><br>This is a test of using <a href="https://plot.ly/" target="_blank" rel="external">Plotly</a> in my blog.  </p>
+<h2 id="interactive-plots-in-plotlyjs"><a href="#Interactive-plots-in-plotly-js" class="headerlink" title="Interactive plots in plotly.js"></a>Interactive plots in plotly.js</h2><p>Two graphs are depicted as follows: </p>
+<h3 id="a-simple-line-graph"><a href="#A-simple-line-graph" class="headerlink" title="A simple line graph"></a>A simple line graph</h3><div id="tester" style="width:600px;height:250px;margin: 0px auto;"></div>
+
+<script>
+    TESTER = document.getElementById('tester');
+    Plotly.plot( TESTER, [{
+    x: [1, 2, 3, 4, 5],
+    y: [1, 2, 4, 8, 16] }], {
+    margin: { t: 0 } } );
+</script>
+
+<a id="more"></a>
+<h3 id="mixed-subplots"><a href="#Mixed-subplots" class="headerlink" title="Mixed subplots"></a>Mixed subplots</h3> <div id="myDiv" style="width: 540px; height: 403px; margin: 0px auto;">
+
+<script src="/plotly/mixed_subplot.js">
+
+<h2 id="Note"><a href="#Note" class="headerlink" title="Note"></a>Note</h2><ul>
+<li>The interactive plots make the browser load much slower, especially the second complex one;</li>
+<li>Two methods of inserting graphs were used above: the former with <code>.js</code> file and the file containing data directly written in the <code>.md</code> file; the latter with links pointing to the <code>.js</code> file outside the current directory;</li>
+<li>Later, the <a href="http://www.chartjs.org/">Chart.js</a> and <a href="https://d3js.org/">D3.js</a> will also be used to test the performance. </li>
+</ul>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><ol>
+<li><a href="https://plot.ly/javascript/getting-started/">Getting Started with plotly.js</a></li>
+<li><a href="https://plot.ly/javascript/mixed-subplots/">Mixed Subplots in plotly.js</a></li>
+</ol>
+</script></div>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;head&gt;&lt;script src=&quot;https://cdn.plot.ly/plotly-latest.min.js&quot;&gt;&lt;/script&gt;&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;br&gt;This is a test of using &lt;a href=&quot;https://plot.ly/&quot;&gt;Plotly&lt;/a&gt; in my blog.  &lt;/p&gt;
+&lt;h2 id=&quot;Interactive-plots-in-plotly-js&quot;&gt;&lt;a href=&quot;#Interactive-plots-in-plotly-js&quot; class=&quot;headerlink&quot; title=&quot;Interactive plots in plotly.js&quot;&gt;&lt;/a&gt;Interactive plots in plotly.js&lt;/h2&gt;&lt;p&gt;Two graphs are depicted as follows: &lt;/p&gt;
+&lt;h3 id=&quot;A-simple-line-graph&quot;&gt;&lt;a href=&quot;#A-simple-line-graph&quot; class=&quot;headerlink&quot; title=&quot;A simple line graph&quot;&gt;&lt;/a&gt;A simple line graph&lt;/h3&gt;&lt;div id=&quot;tester&quot; style=&quot;width:600px;height:250px;margin: 0px auto;&quot;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+    TESTER = document.getElementById(&#39;tester&#39;);
+    Plotly.plot( TESTER, [{
+    x: [1, 2, 3, 4, 5],
+    y: [1, 2, 4, 8, 16] }], {
+    margin: { t: 0 } } );
+&lt;/script&gt;
+    
+    </summary>
+    
+      <category term="Data Science" scheme="http://yoursite.com/categories/Data-Science/"/>
+    
+      <category term="Data Visualization" scheme="http://yoursite.com/categories/Data-Science/Data-Visualization/"/>
+    
+    
+      <category term="data visualization" scheme="http://yoursite.com/tags/data-visualization/"/>
+    
+      <category term="Plotly.js" scheme="http://yoursite.com/tags/Plotly-js/"/>
+    
+      <category term="en" scheme="http://yoursite.com/tags/en/"/>
+    
+  </entry>
+  
+  <entry>
     <title>写，为什么</title>
     <link href="http://yoursite.com/2017/02/18/%E5%86%99%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88/"/>
     <id>http://yoursite.com/2017/02/18/写，为什么/</id>
     <published>2017-02-18T03:35:34.000Z</published>
-    <updated>2017-02-18T05:21:54.000Z</updated>
+    <updated>2017-02-18T15:38:58.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>事物必须兼具入口和出口。</p>
@@ -42,10 +106,10 @@
     
     </summary>
     
-      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="jottings" scheme="http://yoursite.com/categories/jottings/"/>
     
     
-      <category term="中文" scheme="http://yoursite.com/tags/%E4%B8%AD%E6%96%87/"/>
+      <category term="zh-Hans" scheme="http://yoursite.com/tags/zh-Hans/"/>
     
   </entry>
   
@@ -54,7 +118,7 @@
     <link href="http://yoursite.com/2017/02/17/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B8%B2%E6%9F%93%E5%8F%8A%E4%BB%A3%E7%A0%81%E6%B5%8B%E8%AF%95/"/>
     <id>http://yoursite.com/2017/02/17/数学公式渲染及代码测试/</id>
     <published>2017-02-17T05:36:30.000Z</published>
-    <updated>2017-02-18T14:57:01.000Z</updated>
+    <updated>2017-02-18T15:31:46.000Z</updated>
     
     <content type="html"><![CDATA[<p>这篇post是用来测试网站对数学公式和代码的渲染情况。</p>
 <h2 id="数学公式渲染"><a href="#数学公式渲染" class="headerlink" title="数学公式渲染"></a>数学公式渲染</h2><h3 id="augmented-matrix"><a href="#Augmented-matrix" class="headerlink" title="Augmented matrix"></a>Augmented matrix</h3><p>$$     \left[<br>\begin{array}{cc|c}<br>   1&amp;2&amp;3\\<br>   4&amp;5&amp;6<br>\end{array}<br>        \right]<br>$$</p>
@@ -92,7 +156,7 @@
     
     </summary>
     
-      <category term="建站" scheme="http://yoursite.com/categories/%E5%BB%BA%E7%AB%99/"/>
+      <category term="Blog" scheme="http://yoursite.com/categories/Blog/"/>
     
     
       <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
@@ -110,7 +174,7 @@
     <link href="http://yoursite.com/2017/02/09/hello-world/"/>
     <id>http://yoursite.com/2017/02/09/hello-world/</id>
     <published>2017-02-09T07:55:54.000Z</published>
-    <updated>2017-02-17T12:28:52.000Z</updated>
+    <updated>2017-02-18T15:31:56.000Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="quick-start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
@@ -134,7 +198,7 @@
     
     </summary>
     
-      <category term="建站" scheme="http://yoursite.com/categories/%E5%BB%BA%E7%AB%99/"/>
+      <category term="Blog" scheme="http://yoursite.com/categories/Blog/"/>
     
     
       <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
